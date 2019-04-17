@@ -1,0 +1,52 @@
+{
+     // Customizes which terminal application to run on OS X.
+"terminal.external.osxExec": "iTerm.app",
+"terminal.integrated.cursorStyle": "line",
+"terminal.integrated.shell.osx": "/bin/bash",
+"vim.insertModeKeyBindings": [
+    {
+        "before": ["i", "i"],
+        "after": ["<Esc>"]
+   }
+],
+"vim.normalModeKeyBindingsNonRecursive": [
+    {
+        "before":["<leader>","m" ],
+        "after":[]
+       , "commands": [
+             {
+                "command": "workbench.action.problems.focus",
+                "args": []
+            },
+            {
+                "command": "workbench.action.maximizeEditor",
+                "args": []
+            }
+        ]
+        },
+    {
+        "before":[";" ],
+        "after":[]
+       , "commands": [
+            {
+                "command": "workbench.action.showCommands",
+                "args": []
+            }
+        ]
+        }
+],
+"editor.cursorBlinking": "solid",
+"vim.enableNeovim": true,
+"vim.neovimPath": "/usr/local/bin/nvim",
+"vim.leader": "<space>",
+"vim.easymotion": true,
+"vim.sneak": true,
+"vim.incsearch": true,
+"vim.useSystemClipboard": true,
+"vim.useCtrlKeys": false,
+"vim.hlsearch": true,
+"workbench.colorTheme": "Solarized Light",
+"editor.fontSize": 14,
+"editor.wordWrap": "bounded",
+"extensions.ignoreRecommendations": false,
+}
