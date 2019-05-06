@@ -49,4 +49,5 @@
 "editor.fontSize": 14,
 "editor.wordWrap": "bounded",
 "extensions.ignoreRecommendations": false,
+"editor.formatOnType": true,
 }
