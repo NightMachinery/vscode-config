@@ -2,7 +2,7 @@
      // Customizes which terminal application to run on OS X.
 "terminal.external.osxExec": "iTerm.app",
 "terminal.integrated.cursorStyle": "line",
-"terminal.integrated.shell.osx": "/bin/bash",
+"terminal.integrated.shell.osx": "/usr/local/bin/bash",
 "vim.insertModeKeyBindings": [
     {
         "before": ["i", "i"],
@@ -14,10 +14,10 @@
         "before":["<leader>","m" ],
         "after":[]
        , "commands": [
-             {
-                "command": "workbench.action.problems.focus",
-                "args": []
-            },
+            //  {
+            //     "command": "workbench.action.problems.focus",
+            //     "args": []
+            // },
             {
                 "command": "workbench.action.maximizeEditor",
                 "args": []
@@ -33,6 +33,14 @@
                 "args": []
             }
         ]
+        },
+        {
+            "before": ["u"],
+            "commands": ["undo"]
+        },
+        {
+            "before": ["U"],
+            "commands": ["redo"]
         }
 ],
 "editor.cursorBlinking": "solid",
@@ -46,8 +54,16 @@
 "vim.useCtrlKeys": false,
 "vim.hlsearch": true,
 "workbench.colorTheme": "Solarized Light",
-"editor.fontSize": 14,
+"editor.fontSize": 16,
 "editor.wordWrap": "bounded",
 "extensions.ignoreRecommendations": false,
 "editor.formatOnType": true,
+"editor.suggestSelection": "first",
+"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+"[python]": {},
+"python.pythonPath": "/Users/evar/anaconda/bin/python",
+"python.jediEnabled": false,
+"java.configuration.checkProjectSettingsExclusions": false,
+"julia.enableTelemetry": true,
+"python.insidersChannel": "weekly",
 }
