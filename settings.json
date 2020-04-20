@@ -1,7 +1,6 @@
 {
      // Customizes which terminal application to run on OS X.
 "terminal.external.osxExec": "iTerm.app",
-"terminal.integrated.cursorStyle": "line",
 "terminal.integrated.shell.osx": "/usr/local/bin/bash",
 "vim.insertModeKeyBindings": [
     {
@@ -11,15 +10,42 @@
 ],
 "vim.normalModeKeyBindingsNonRecursive": [
     {
-        "before":["<leader>","m" ],
+        "before":["<leader>", "w", "m" ],
         "after":[]
        , "commands": [
-            //  {
+                        //  {
             //     "command": "workbench.action.problems.focus",
             //     "args": []
-            // },
+            // }
             {
                 "command": "workbench.action.maximizeEditor",
+                "args": []
+            }
+        ]
+        },
+        { "before":["<leader>","f", "s" ], "commands": ["workbench.action.files.save"]}, 
+        { "before":["<leader>","s", "s" ], "commands": ["workbench.action.openSettings"]}, 
+        { "before":["<leader>","w", "t" ], "commands": ["workbench.action.terminal.toggleTerminal"]}, 
+        { "before":["<leader>", "q" ], "after": ["<leader>", "<leader>", "b"]}, 
+        { "before":["<leader>", "e" ], "after": ["<leader>", "<leader>", "w"]}, 
+        { "before":["<leader>", "j" ], "after": ["<leader>", "<leader>", "<leader>", "j"]}, 
+        { "before":["<leader>", "s", "K" ], "commands": ["workbench.action.openGlobalKeybindingsFile"]}, 
+        { "before":["<leader>", "s", "d" ], "commands": ["workbench.action.openDefaultKeybindingsFile"]}, 
+        { "before":["[", "j" ], "commands": ["workbench.action.navigateBack"]}, 
+        { "before":["]", "j" ], "commands": ["workbench.action.navigateForward"]}, 
+        { "before":["[", "b" ], "commands": ["workbench.action.previousEditor"]}, 
+        { "before":["]", "b" ], "commands": ["workbench.action.nextEditor"]}, 
+        { "before":[",", "e" ], "commands": ["language-julia.executeJuliaBlockInREPL"]}, 
+        { "before":[",", "l" ], "commands": ["language-julia.executeJuliaCodeInREPL"]}, 
+        { "before":[",", "c" ], "commands": ["language-julia.executeJuliaCellInREPL"]}, 
+        
+    {
+        "before":["<leader>","s", "k" ],
+        "after":[]
+       , "commands": [
+            {
+                // "command": "workbench.action.openDefaultKeybindingsFile",
+                "command": "workbench.action.openGlobalKeybindings",
                 "args": []
             }
         ]
@@ -61,9 +87,27 @@
 "editor.suggestSelection": "first",
 "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 "[python]": {},
-"python.pythonPath": "/Users/evar/anaconda/bin/python",
+"python.pythonPath": "/home/eva/miniconda3/bin/python",
 "python.jediEnabled": false,
 "java.configuration.checkProjectSettingsExclusions": false,
 "julia.enableTelemetry": true,
-"python.insidersChannel": "weekly",
+"python.insidersChannel": "off",
+"window.zoomLevel": 0,
+"julia.NumThreads": 2,
+"vim.sneakReplacesF": true,
+"editor.mouseWheelScrollSensitivity": 0.8,
+"editor.smoothScrolling": true,
+"editor.wordWrapColumn": 110,
+"vim.easymotionMarkerForegroundColorOneChar": "darkorange",
+"vim.easymotionMarkerForegroundColorTwoChar": "blue",
+"vim.easymotionMarkerBackgroundColor": "lightgreen",
+"vim.easymotionMarkerFontSize": "24",
+"terminal.integrated.fontSize": 18,
+"terminal.integrated.macOptionClickForcesSelection": true,
+"terminal.integrated.macOptionIsMeta": true,
+"terminal.integrated.scrollback": 10000,
+"editor.renderWhitespace": "boundary",
+"terminal.integrated.cursorBlinking": true,
+"terminal.integrated.cursorStyle": "line",
+"terminal.integrated.cursorWidth": 2,
 }
