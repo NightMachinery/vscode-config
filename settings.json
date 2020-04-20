@@ -77,7 +77,7 @@
 "vim.useSystemClipboard": true,
 "vim.useCtrlKeys": false,
 "vim.hlsearch": true,
-"workbench.colorTheme": "Solarized Light",
+"workbench.colorTheme": "Noctis Lilac",
 "editor.fontSize": 14,
 "editor.wordWrap": "bounded",
 "extensions.ignoreRecommendations": false,

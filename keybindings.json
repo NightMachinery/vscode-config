@@ -20,7 +20,11 @@
         "key": "ctrl+j",
         "command": "workbench.action.navigateDown"
     },
-    { "key": "cmd+;", "command": "workbench.action.focusActiveEditorGroup", "when": "terminalFocus" },
+    {
+        "key": "cmd+;",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
     {
         "key": "cmd+;",
         "command": "workbench.action.terminal.toggleTerminal",
@@ -37,14 +41,46 @@
         "when": "jlplotpaneFocus"
     },
     // buggy when doesn't work { "key": "q", "command": "workbench.action.closeActiveEditor", "when": "jlplotpaneFocus" },
-   // { "before":["<leader>", "m", "e" ], "commands": ["language-julia.executeJuliaBlockInREPL"]}, 
+    // { "before":["<leader>", "m", "e" ], "commands": ["language-julia.executeJuliaBlockInREPL"]}, 
     // { "before":[",", "l" ], "commands": ["language-julia.executeJuliaCodeInREPL"]}, 
-    { "key":", e", "command": "language-julia.executeJuliaBlockInREPL", "when": "editorTextFocus && editorLangId == 'julia' && vim.active && vim.mode != 'Insert'" },
-    { "key":", l", "command": "language-julia.executeJuliaCodeInREPL", "when": "editorTextFocus && editorLangId == 'julia' && vim.active && vim.mode != 'Insert'" },
-    { "key":", c", "command": "language-julia.executeJuliaCellInREPL", "when": "editorTextFocus && editorLangId == 'julia' && vim.active && vim.mode != 'Insert'" },
-    { "key":", h", "command": "editor.action.showHover", "when": "editorTextFocus && vim.active && vim.mode != 'Insert'" },
-    { "key":"[ b", "command": "workbench.action.previousEditor", "when": "vim.mode != 'Insert'" },
-    { "key":"] b", "command": "workbench.action.nextEditor", "when": "vim.mode != 'Insert'" },
-    { "key":"[ j", "command": "workbench.action.navigateBack", "when": "vim.mode != 'Insert'" },
-    { "key":"] j", "command": "workbench.action.navigateForward", "when": "vim.mode != 'Insert'" },
+    {
+        "key": ", e",
+        "command": "language-julia.executeJuliaBlockInREPL",
+        "when": "editorTextFocus && editorLangId == 'julia' && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "key": ", l",
+        "command": "language-julia.executeJuliaCodeInREPL",
+        "when": "editorTextFocus && editorLangId == 'julia' && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "key": ", c",
+        "command": "language-julia.executeJuliaCellInREPL",
+        "when": "editorTextFocus && editorLangId == 'julia' && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "key": ", h",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+    },
+    // {
+    //     "key": "[ b",
+    //     "command": "workbench.action.previousEditor",
+    //     "when": "!inputFocus"
+    // },
+    // {
+    //     "key": "] b",
+    //     "command": "workbench.action.nextEditor",
+    //     "when": "!inputFocus || (vim.active && vim.mode != 'Insert')"
+    // },
+    // {
+    //     "key": "[ j",
+    //     "command": "workbench.action.navigateBack",
+    //     "when": "!inputFocus || (vim.active && vim.mode != 'Insert')"
+    // },
+    // {
+    //     "key": "] j",
+    //     "command": "workbench.action.navigateForward",
+    //     "when": "!inputFocus || (vim.active && vim.mode != 'Insert')"
+    // },
 ]
