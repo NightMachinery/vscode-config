@@ -28,7 +28,7 @@
     {
         "key": "cmd+;",
         "command": "workbench.action.terminal.toggleTerminal",
-        "when": "editorTextFocus"
+        "when": "!terminalFocus"
     },
     {
         "key": "backspace",
@@ -43,6 +43,11 @@
     // buggy when doesn't work { "key": "q", "command": "workbench.action.closeActiveEditor", "when": "jlplotpaneFocus" },
     // { "before":["<leader>", "m", "e" ], "commands": ["language-julia.executeJuliaBlockInREPL"]}, 
     // { "before":[",", "l" ], "commands": ["language-julia.executeJuliaCodeInREPL"]}, 
+    {
+        "key": ", s",
+        "command": "language-julia.selectBlock",
+        "when": "editorTextFocus && editorLangId == 'julia' && vim.active && vim.mode != 'Insert'"
+    },
     {
         "key": ", e",
         "command": "language-julia.executeJuliaBlockInREPL",
@@ -62,6 +67,10 @@
         "key": ", h",
         "command": "editor.action.showHover",
         "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "key": "cmd+'",
+        "command": "workbench.action.toggleMaximizedPanel"
     },
     // {
     //     "key": "[ b",

@@ -1,114 +1,223 @@
 {
-     // Customizes which terminal application to run on OS X.
-"terminal.external.osxExec": "iTerm.app",
-"terminal.integrated.shell.osx": "/usr/local/bin/bash",
-"vim.insertModeKeyBindings": [
-    {
-        "before": ["i", "i"],
-        "after": ["<Esc>"]
-   }
-],
-"vim.normalModeKeyBindingsNonRecursive": [
-    {
-        "before":["<leader>", "w", "m" ],
-        "after":[]
-       , "commands": [
-                        //  {
-            //     "command": "workbench.action.problems.focus",
-            //     "args": []
-            // }
-            {
-                "command": "workbench.action.maximizeEditor",
-                "args": []
-            }
-        ]
+    // Customizes which terminal application to run on OS X.
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+    // "vim.insertModeKeyBindings": [
+    //     {
+    //         "before": ["i", "i"],
+    //         "after": ["<Esc>"]
+    //    }
+    // ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "m"
+            ],
+            "after": [],
+            "commands": [
+                //  {
+                //     "command": "workbench.action.problems.focus",
+                //     "args": []
+                // }
+                {
+                    "command": "workbench.action.maximizeEditor",
+                    "args": []
+                }
+            ]
         },
-        { "before":["<leader>","f", "s" ], "commands": ["workbench.action.files.save"]}, 
-        { "before":["<leader>","s", "s" ], "commands": ["workbench.action.openSettings"]}, 
-        { "before":["<leader>","w", "t" ], "commands": ["workbench.action.terminal.toggleTerminal"]}, 
-        { "before":["<leader>", "q" ], "after": ["<leader>", "<leader>", "b"]}, 
-        { "before":["<leader>", "e" ], "after": ["<leader>", "<leader>", "w"]}, 
-        { "before":["<leader>", "j" ], "after": ["<leader>", "<leader>", "<leader>", "j"]}, 
-        { "before":["<leader>", "s", "K" ], "commands": ["workbench.action.openGlobalKeybindingsFile"]}, 
-        { "before":["<leader>", "s", "d" ], "commands": ["workbench.action.openDefaultKeybindingsFile"]}, 
+        {
+            "before": [
+                "<leader>",
+                "f",
+                "s"
+            ],
+            "commands": [
+                "workbench.action.files.save"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "s"
+            ],
+            "commands": [
+                "workbench.action.openSettings"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "t"
+            ],
+            "commands": [
+                "workbench.action.terminal.toggleTerminal"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "q"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "b"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "w"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "j"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "<leader>",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "K"
+            ],
+            "commands": [
+                "workbench.action.openGlobalKeybindingsFile"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "d"
+            ],
+            "commands": [
+                "workbench.action.openDefaultKeybindingsFile"
+            ]
+        },
         // { "before":["[", "j" ], "commands": ["workbench.action.navigateBack"]}, 
         // { "before":["]", "j" ], "commands": ["workbench.action.navigateForward"]}, 
         // { "before":["[", "b" ], "commands": ["workbench.action.previousEditor"]}, 
         // { "before":["]", "b" ], "commands": ["workbench.action.nextEditor"]},  
-        { "before":["<leader>", "h" ], "commands": ["editor.action.showHover"]} /* also: , h */, 
-        
-    {
-        "before":["<leader>","s", "k" ],
-        "after":[]
-       , "commands": [
-            {
-                // "command": "workbench.action.openDefaultKeybindingsFile",
-                "command": "workbench.action.openGlobalKeybindings",
-                "args": []
-            }
-        ]
-        },
-    {
-        "before":[";" ],
-        "after":[]
-       , "commands": [
-            {
-                "command": "workbench.action.showCommands",
-                "args": []
-            }
-        ]
+        {
+            "before": [
+                "<leader>",
+                "h"
+            ],
+            "commands": [
+                "editor.action.showHover"
+            ]
+        } /* also: , h */,
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "k"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    // "command": "workbench.action.openDefaultKeybindingsFile",
+                    "command": "workbench.action.openGlobalKeybindings",
+                    "args": []
+                }
+            ]
         },
         {
-            "before": ["u"],
-            "commands": ["undo"]
+            "before": [
+                ";"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.showCommands",
+                    "args": []
+                }
+            ]
         },
         {
-            "before": ["U"],
-            "commands": ["redo"]
+            "before": [
+                "u"
+            ],
+            "commands": [
+                "undo"
+            ]
+        },
+        {
+            "before": [
+                "U"
+            ],
+            "commands": [
+                "redo"
+            ]
         }
-],
-"editor.cursorBlinking": "solid",
-"vim.enableNeovim": true,
-"vim.neovimPath": "/usr/local/bin/nvim",
-"vim.leader": "<space>",
-"vim.easymotion": true,
-"vim.sneak": true,
-"vim.incsearch": true,
-"vim.useSystemClipboard": true,
-"vim.useCtrlKeys": false,
-"vim.hlsearch": true,
-"workbench.colorTheme": "Noctis Lilac",
-"editor.fontSize": 14,
-"editor.wordWrap": "bounded",
-"extensions.ignoreRecommendations": false,
-"editor.formatOnType": true,
-"editor.suggestSelection": "first",
-"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-"[python]": {},
-"python.pythonPath": "/home/eva/miniconda3/bin/python",
-"python.jediEnabled": false,
-"java.configuration.checkProjectSettingsExclusions": false,
-"julia.enableTelemetry": true,
-"python.insidersChannel": "off",
-"window.zoomLevel": 1,
-"julia.NumThreads": 2,
-"vim.sneakReplacesF": true,
-"editor.mouseWheelScrollSensitivity": 0.8,
-"editor.smoothScrolling": true,
-"editor.wordWrapColumn": 110,
-"vim.easymotionMarkerForegroundColorOneChar": "darkorange",
-"vim.easymotionMarkerForegroundColorTwoChar": "blue",
-"vim.easymotionMarkerBackgroundColor": "lightgreen",
-"vim.easymotionMarkerFontSize": "24",
-"terminal.integrated.fontSize": 14,
-"terminal.integrated.macOptionClickForcesSelection": true,
-"terminal.integrated.macOptionIsMeta": true,
-"terminal.integrated.scrollback": 10000,
-"editor.renderWhitespace": "boundary",
-"terminal.integrated.cursorBlinking": true,
-"terminal.integrated.cursorStyle": "line",
-"terminal.integrated.cursorWidth": 2,
-"vim.vimrc.path": "$HOME/.vsvimrc",
-"editor.formatOnSave": true,
-"git.confirmSync": false,
+    ],
+    "editor.cursorBlinking": "solid",
+    "vim.enableNeovim": true,
+    // "vim.neovimPath": "/usr/local/bin/nvim",
+    "vim.leader": "<space>",
+    "vim.easymotion": true,
+    "vim.sneak": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "workbench.colorTheme": "Noctis Lilac",
+    "editor.fontSize": 14,
+    "editor.wordWrap": "bounded",
+    "extensions.ignoreRecommendations": false,
+    "editor.formatOnType": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "[python]": {},
+    "python.jediEnabled": false,
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "julia.enableTelemetry": true,
+    "python.insidersChannel": "off",
+    "window.zoomLevel": 1,
+    "julia.NumThreads": 2,
+    "vim.sneakReplacesF": true,
+    "editor.mouseWheelScrollSensitivity": 0.8,
+    "editor.smoothScrolling": true,
+    "editor.wordWrapColumn": 110,
+    "vim.easymotionMarkerForegroundColorOneChar": "darkorange",
+    "vim.easymotionMarkerForegroundColorTwoChar": "blue",
+    "vim.easymotionMarkerBackgroundColor": "lightgreen",
+    "vim.easymotionMarkerFontSize": "24",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.macOptionClickForcesSelection": true,
+    "terminal.integrated.macOptionIsMeta": true,
+    "terminal.integrated.scrollback": 10000,
+    "editor.renderWhitespace": "boundary",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorWidth": 2,
+    "vim.vimrc.path": "$HOME/.vsvimrc",
+    "git.confirmSync": false,
+    "pasteImage.namePrefix": "automaticpaste_",
+    "pasteImage.showFilePathConfirmInputBox": true,
+    "editor.formatOnSave": true,
+    "julia.enableCrashReporter": true,
+    "editor.lineNumbers": "relative",
+    "search.showLineNumbers": true,
+    "julia.useRevise": false,
+    "julia.lint.run": false,
+    "julia.usePlotPane": false,
+    "python.condaPath": "/Users/evar/anaconda/bin/conda",
 }
