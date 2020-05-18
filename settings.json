@@ -169,7 +169,7 @@
         }
     ],
     "editor.cursorBlinking": "solid",
-    "vim.enableNeovim": true,
+    // "vim.enableNeovim": true,
     // "vim.neovimPath": "/usr/local/bin/nvim",
     "vim.leader": "<space>",
     "vim.easymotion": true,
@@ -220,4 +220,9 @@
     "julia.lint.run": false,
     "julia.usePlotPane": false,
     "python.condaPath": "/Users/evar/anaconda/bin/conda",
+    "bracket-pair-colorizer-2.colors": [
+        "Darkgreen",
+        "Orchid",
+        "LightSkyBlue"
+    ],
 }
