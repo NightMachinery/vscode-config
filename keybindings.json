@@ -50,7 +50,7 @@
     },
     {
         "key": ", e",
-        "command": "language-julia.executeJuliaBlockInREPL",
+        "command": "language-julia.executeCodeBlockOrSelection",
         "when": "editorTextFocus && editorLangId == 'julia' && vim.active && vim.mode != 'Insert'"
     },
     {
@@ -60,7 +60,7 @@
     },
     {
         "key": ", c",
-        "command": "language-julia.executeJuliaCellInREPL",
+        "command": "language-julia.executeCellAndMove",
         "when": "editorTextFocus && editorLangId == 'julia' && vim.active && vim.mode != 'Insert'"
     },
     {
@@ -71,6 +71,19 @@
     {
         "key": "cmd+'",
         "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "cmd+o",
+        "command": "-workbench.action.files.openFileFolder"
+    },
+    {
+        "key": "cmd+o",
+        "command": "-workbench.action.files.openLocalFileFolder",
+        "when": "remoteFileDialogVisible"
+    },
+    {
+        "key": "cmd+o",
+        "command": "workbench.action.quickSwitchWindow"
     },
     // {
     //     "key": "[ b",

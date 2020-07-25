@@ -225,4 +225,7 @@
         "Orchid",
         "LightSkyBlue"
     ],
+    "rust-client.channel": "stable",
+    "java.semanticHighlighting.enabled": true,
+    "python.languageServer": "Microsoft",
 }
