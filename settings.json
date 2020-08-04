@@ -227,5 +227,16 @@
     ],
     "rust-client.channel": "stable",
     "java.semanticHighlighting.enabled": true,
-    "python.languageServer": "Microsoft",
+    "python.languageServer": "Pylance",
+    "python.pythonPath": "/Users/evar/anaconda/bin/python",
+    "vscodeMarkdownNotes.createNoteOnGoToDefinitionWhenMissing": false,
+    "vscodeMarkdownNotes.workspaceFilenameConvention": "relativePaths",
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.scopes": [
+        "document"
+    ],
+    "gitlens.statusBar.enabled": false,
+    "autoHide.autoHidePanel": false,
+    "autoHide.hideOnOpen": false,
 }
