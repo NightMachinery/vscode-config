@@ -49,7 +49,17 @@
         "when": "editorTextFocus && editorLangId == 'julia' && vim.active && vim.mode != 'Insert'"
     },
     {
+        "key": "escape",
+        "command": "language-julia.clearAllInlineResults",
+        "when": "editorTextFocus && editorLangId == 'julia' && vim.active && vim.mode != 'Insert'"
+    },
+    {
         "key": ", e",
+        "command": "language-julia.executeCodeBlockOrSelectionAndMove",
+        "when": "editorTextFocus && editorLangId == 'julia' && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "key": ", shift+e",
         "command": "language-julia.executeCodeBlockOrSelection",
         "when": "editorTextFocus && editorLangId == 'julia' && vim.active && vim.mode != 'Insert'"
     },
