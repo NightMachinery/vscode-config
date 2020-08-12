@@ -50,7 +50,7 @@
     },
     {
         "key": "escape",
-        "command": "language-julia.clearAllInlineResults",
+        "command": "multiCommand.juliaEscape",
         "when": "editorTextFocus && editorLangId == 'julia' && vim.active && vim.mode != 'Insert'"
     },
     {

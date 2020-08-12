@@ -1,5 +1,5 @@
 {
-    // Customizes which terminal application to run on OS X.
+    // Customizes which terminal applicaotion to run on OS X.
     "terminal.external.osxExec": "iTerm.app",
     "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
     // "vim.insertModeKeyBindings": [
@@ -289,4 +289,13 @@
     ],
     "peacock.affectStatusBar": false,
     "peacock.affectTitleBar": false,
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.juliaEscape",
+            "sequence": [
+                "extension.vim_escape",
+                "language-julia.clearAllInlineResults",
+            ]
+        },
+    ]
 }
