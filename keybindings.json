@@ -74,6 +74,16 @@
         "when": "editorTextFocus && editorLangId == 'julia' && vim.active && vim.mode != 'Insert'"
     },
     {
+        "key": ", shift+c",
+        "command": "language-julia.executeCell",
+        "when": "editorTextFocus && editorLangId == 'julia' && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "key": ", b",
+        "command": "language-julia.executeFile",
+        "when": "editorTextFocus && editorLangId == 'julia' && vim.active && vim.mode != 'Insert'"
+    },
+    {
         "key": ", h",
         "command": "editor.action.showHover",
         "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
