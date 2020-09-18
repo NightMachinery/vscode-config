@@ -212,7 +212,6 @@
     "git.confirmSync": false,
     "pasteImage.namePrefix": "automaticpaste_",
     "pasteImage.showFilePathConfirmInputBox": true,
-    "editor.formatOnSave": true,
     "julia.enableCrashReporter": true,
     "editor.lineNumbers": "relative",
     "search.showLineNumbers": true,
