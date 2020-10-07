@@ -301,5 +301,7 @@
     "editor.minimap.scale": 2,
     "editor.minimap.showSlider": "always",
     "editor.minimap.size": "fit",
-    "terminal.integrated.experimentalUseTitleEvent": true
+    "terminal.integrated.experimentalUseTitleEvent": true,
+    "editor.insertSpaces": false,
+    // "editor.detectIndentation": false // did not work anyways. Perhaps vim's fault.
 }
