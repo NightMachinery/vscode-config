@@ -302,6 +302,19 @@
     "editor.minimap.showSlider": "always",
     "editor.minimap.size": "fit",
     "terminal.integrated.experimentalUseTitleEvent": true,
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
+    "remote.autoForwardPorts": false,
+    "docsView.documentationView.updateMode": "sticky",
+    "workbench.startupEditor": "welcomePage",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter-notebook",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
     "editor.insertSpaces": false,
+    "sync.gist": "94e030567aa148953cb649035bcf9fd9",
     // "editor.detectIndentation": false // did not work anyways. Perhaps vim's fault.
 }
