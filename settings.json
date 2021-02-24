@@ -198,9 +198,10 @@
     "editor.smoothScrolling": true,
     "editor.wordWrapColumn": 110,
     "vim.easymotionMarkerForegroundColorOneChar": "darkorange",
-    "vim.easymotionMarkerForegroundColorTwoChar": "blue",
+    "vim.easymotionMarkerForegroundColorTwoCharFirst": "blue",
+    "vim.easymotionMarkerForegroundColorTwoCharSecond": "darkblue",
     "vim.easymotionMarkerBackgroundColor": "lightgreen",
-    "vim.easymotionMarkerFontSize": "24",
+    // "vim.easymotionMarkerFontSize": "24",
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.macOptionClickForcesSelection": true,
     "terminal.integrated.macOptionIsMeta": true,
@@ -316,5 +317,7 @@
     ],
     "editor.insertSpaces": false,
     "sync.gist": "94e030567aa148953cb649035bcf9fd9",
+    "terminal.integrated.automationShell.osx": "/usr/local/bin/bash",
+    "terminal.integrated.automationShell.linux": "/bin/bash",
     // "editor.detectIndentation": false // did not work anyways. Perhaps vim's fault.
 }
