@@ -44,6 +44,11 @@
     // { "before":["<leader>", "m", "e" ], "commands": ["language-julia.executeJuliaBlockInREPL"]}, 
     // { "before":[",", "l" ], "commands": ["language-julia.executeJuliaCodeInREPL"]}, 
     {
+        "key": ", r",
+        "command": "editor.action.rename",
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+    },
+    {
         "key": ", s",
         "command": "language-julia.selectBlock",
         "when": "editorTextFocus && editorLangId == 'julia' && vim.active && vim.mode != 'Insert'"
@@ -114,6 +119,10 @@
     {
         "key": "cmd+o",
         "command": "workbench.action.quickSwitchWindow"
+    },
+    {
+        "key": "ctrl+=",
+        "command": "workbench.action.navigateForward"
     },
     // {
     //     "key": "[ b",

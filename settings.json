@@ -319,5 +319,8 @@
     "sync.gist": "94e030567aa148953cb649035bcf9fd9",
     "terminal.integrated.automationShell.osx": "/usr/local/bin/bash",
     "terminal.integrated.automationShell.linux": "/bin/bash",
+    "explorer.confirmDragAndDrop": false,
+    "search.smartCase": true,
+    "go.toolsManagement.autoUpdate": true,
     // "editor.detectIndentation": false // did not work anyways. Perhaps vim's fault.
 }
