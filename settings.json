@@ -179,7 +179,7 @@
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
-    "workbench.colorTheme": "Noctis Lilac",
+    "workbench.colorTheme": "Eva Light Bold",
     "editor.fontSize": 14,
     "editor.wordWrap": "bounded",
     "extensions.ignoreRecommendations": false,
@@ -190,7 +190,6 @@
     "python.jediEnabled": false,
     "java.configuration.checkProjectSettingsExclusions": false,
     "julia.enableTelemetry": true,
-    "python.insidersChannel": "off",
     "window.zoomLevel": 1,
     "julia.NumThreads": 2,
     "vim.sneakReplacesF": true,
@@ -225,7 +224,6 @@
     ],
     "rust-client.channel": "stable",
     "java.semanticHighlighting.enabled": true,
-    "python.languageServer": "Pylance",
     "python.pythonPath": "/Users/evar/anaconda/bin/python",
     "vscodeMarkdownNotes.createNoteOnGoToDefinitionWhenMissing": false,
     "vscodeMarkdownNotes.workspaceFilenameConvention": "relativePaths",
@@ -322,5 +320,14 @@
     "explorer.confirmDragAndDrop": false,
     "search.smartCase": true,
     "go.toolsManagement.autoUpdate": true,
+    "python.defaultInterpreterPath": "ipython",
+    "settingsSync.ignoredSettings": [
+        "-python.defaultInterpreterPath"
+    ],
+    "jupyter.alwaysTrustNotebooks": true,
+    "python.analysis.logLevel": "Warning",
+    "python.languageServer": "Microsoft",
+    "editor.minimap.enabled": false,
+    "jupyter.askForKernelRestart": false,
     // "editor.detectIndentation": false // did not work anyways. Perhaps vim's fault.
 }
