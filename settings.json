@@ -190,7 +190,7 @@
     "python.jediEnabled": false,
     "java.configuration.checkProjectSettingsExclusions": false,
     "julia.enableTelemetry": true,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 2,
     "julia.NumThreads": 2,
     "vim.sneakReplacesF": true,
     "editor.mouseWheelScrollSensitivity": 0.8,
