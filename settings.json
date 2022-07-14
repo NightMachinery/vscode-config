@@ -190,7 +190,7 @@
     "python.jediEnabled": false,
     "java.configuration.checkProjectSettingsExclusions": false,
     "julia.enableTelemetry": true,
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 1,
     "julia.NumThreads": 2,
     "vim.sneakReplacesF": true,
     "editor.mouseWheelScrollSensitivity": 0.8,
@@ -307,12 +307,9 @@
     "remote.autoForwardPorts": false,
     "docsView.documentationView.updateMode": "sticky",
     "workbench.startupEditor": "welcomePage",
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter-notebook",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
     "editor.insertSpaces": false,
     "sync.gist": "94e030567aa148953cb649035bcf9fd9",
     "terminal.integrated.automationShell.osx": "/usr/local/bin/bash",
@@ -320,14 +317,26 @@
     "explorer.confirmDragAndDrop": false,
     "search.smartCase": true,
     "go.toolsManagement.autoUpdate": true,
-    "python.defaultInterpreterPath": "ipython",
+    "python.defaultInterpreterPath": "/Users/evar/anaconda/bin/python",
     "settingsSync.ignoredSettings": [
         "-python.defaultInterpreterPath"
     ],
     "jupyter.alwaysTrustNotebooks": true,
     "python.analysis.logLevel": "Warning",
-    "python.languageServer": "Microsoft",
     "editor.minimap.enabled": false,
     "jupyter.askForKernelRestart": false,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "julia.symbolCacheDownload": true,
+    "python.languageServer": "Default",
+    "julia.notebookController": true,
+    "notebook.output.textLineLimit": 99999999,
+    "svelte.plugin.svelte.useNewTransformation": true,
+    "[svelte]": {
+        "editor.defaultFormatter": "svelte.svelte-vscode"
+    },
+    "svelte.enable-ts-plugin": true
     // "editor.detectIndentation": false // did not work anyways. Perhaps vim's fault.
 }
